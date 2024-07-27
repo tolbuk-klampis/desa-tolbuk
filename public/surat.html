@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="/_vercel/insights/script.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="./output.css" rel="stylesheet" />
+    <title>Desa Tolbuk</title>
+    <meta
+      name="Desa Tolbuk, Kecamatan Klampis, Kabupaten Bangkalan, Provinsi Jawa Timur, Indonesia"
+      content="High-performance HTML based website template."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .shadow-overlay::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(
+          circle,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0.8) 70%
+        );
+        z-index: 1;
+      }
+    </style>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("nav-menu-mobile").classList.toggle("hidden");
+      }
+    </script>
+  </head>
+  <body class="">
+    <nav class="absolute z-30 w-full p-6 bg-transparent">
+      <div class="flex items-center justify-between">
+        <h1 class="text-3xl font-bold text-white">DESA TOLBUK</h1>
+        <div class="md:hidden">
+          <button onclick="toggleMenu()" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div
+          id="nav-menu"
+          class="hidden gap-8 text-xl font-medium text-white md:flex"
+        >
+          <a class="transition hover:text-gray-300" href="index.html">Home</a>
+          <a class="transition hover:text-gray-300" href="surat.html">Surat</a>
+          <a class="transition hover:text-gray-300" href="potensi.html"
+            >Potensi</a
+          >
+          <a class="transition hover:text-gray-300" href="informasi_publik.html"
+            >Informasi Publik</a
+          >
+        </div>
+      </div>
+      <div id="nav-menu-mobile" class="hidden mt-4 border md:hidden">
+        <a
+          class="block px-4 py-2 text-white bg-gray-800 rounded hover:bg-gray-700"
+          href="index.html"
+          >Home</a
+        >
+        <a
+          class="block px-4 py-2 text-white bg-gray-800 rounded hover:bg-gray-700"
+          href="surat.html"
+          >Surat</a
+        >
+        <a
+          class="block px-4 py-2 text-white bg-gray-800 rounded hover:bg-gray-700"
+          href="potensi.html"
+          >Potensi</a
+        >
+        <a
+          class="block px-4 py-2 text-white bg-gray-800 rounded hover:bg-gray-700"
+          href="informasi_publik.html"
+          >Informasi Publik</a
+        >
+      </div>
+    </nav>
+    <section
+      class="relative w-screen h-[300px] bg-[url('./assets/hero_2.png')] bg-cover bg-center shadow-overlay"
+    >
+      <div
+        class="absolute top-0 bottom-0 left-0 right-0 z-20 flex items-center justify-center"
+      >
+        <h1
+          class="font-roboto text-[3rem] md:text-[4rem] lg:text-[6rem] drop-shadow-lg font-bold text-white"
+        >
+          Surat-Surat Desa
+        </h1>
+      </div>
+    </section>
+    <section class="py-[5rem] min-h-[70vh] flex justify-center items-center">
+      <div
+        class="max-w-[1100px] mx-auto flex flex-wrap justify-evenly gap-x-2 gap-y-6"
+      >
+        <a
+          href="/assets/pdf/FORMULIR PERMOHONAN KEHENDAK NIKAH MODEL N2.pdf"
+          download
+          class="w-[350px] h-[60px]"
+        >
+          <button
+            class="flex items-center justify-center w-full h-full gap-2 px-4 py-4 text-white transition-all bg-green-600 rounded hover:bg-green-700"
+          >
+            <i class="fa-solid fa-download"></i>
+            <span class="font-medium font-karma"
+              >Formulir Permohonan Kehendak Nikah</span
+            >
+          </button>
+        </a>
+        <a
+          href="/assets/pdf/FORMULIR PERMOHONAN PENCATATAN ISBAT MODEL N3.pdf"
+          download
+          class="w-[350px] h-[60px]"
+        >
+          <button
+            class="flex items-center justify-center w-full h-full gap-2 px-4 py-4 text-white transition-all bg-green-600 rounded hover:bg-green-700"
+          >
+            <i class="fa-solid fa-download"></i>
+            <span class="font-medium font-karma"
+              >Formulir Permohonan Pencatatan Isbat</span
+            >
+          </button>
+        </a>
+        <a
+          href="/assets/pdf/SURAT IZIN ORANGTUA MODEL N5.pdf"
+          download
+          class="w-[350px] h-[60px]"
+        >
+          <button
+            class="flex items-center justify-center w-full h-full gap-2 px-4 py-4 text-white transition-all bg-green-600 rounded hover:bg-green-700"
+          >
+            <i class="fa-solid fa-download"></i>
+            <span class="font-medium font-karma">Surat Izin orangtua</span>
+          </button>
+        </a>
+        <a
+          href="/assets/pdf/SURAT KETERANGAN BEKERJA DILUAR NEGERI.pdf"
+          download
+          class="w-[350px] h-[60px]"
+        >
+          <button
+            class="flex items-center justify-center w-full h-full gap-2 px-4 py-4 text-white transition-all bg-green-600 rounded hover:bg-green-700"
+          >
+            <i class="fa-solid fa-download"></i>
+            <span class="font-medium font-karma"
+              >Surat Keterangan bekerja di luar negeri</span
+            >
+          </button>
+        </a>
+        <a
+          href="/assets/pdf/SURAT KETERANGAN BERDOMISILI.pdf"
+          download
+          class="w-[350px] h-[60px]"
+        >
+          <button
+            class="flex items-center justify-center w-full h-full gap-2 px-4 py-4 text-white transition-all bg-green-600 rounded hover:bg-green-700"
+          >
+            <i class="fa-solid fa-download"></i>
+            <span class="font-medium font-karma"
+              >Surat Keterangan berdomisili</span
+            >
+          </button>
+        </a>
+        <a
+          href="/assets/pdf/SURAT KETERANGAN PENGHASILAN ORANG TUA.pdf"
+          download
+          class="w-[350px] h-[60px]"
+        >
+          <button
+            class="flex items-center justify-center w-full h-full gap-2 px-4 py-4 text-white transition-all bg-green-600 rounded hover:bg-green-700"
+          >
+            <i class="fa-solid fa-download"></i>
+            <span class="font-medium font-karma"
+              >Surat Keterangan Penghasilan Orang tua</span
+            >
+          </button>
+        </a>
+        <a
+          href="/assets/pdf/SURAT KETERANGAN TIDAK MAMPU.pdf"
+          download
+          class="w-[350px] h-[60px]"
+        >
+          <button
+            class="flex items-center justify-center w-full h-full gap-2 px-4 py-4 text-white transition-all bg-green-600 rounded hover:bg-green-700"
+          >
+            <i class="fa-solid fa-download"></i>
+            <span class="font-medium font-karma"
+              >Surat Keterangan Tidak Mampu</span
+            >
+          </button>
+        </a>
+        <a
+          href="/assets/pdf/SURAT KETERANGAN USAHA.pdf"
+          download
+          class="w-[350px] h-[60px]"
+        >
+          <button
+            class="flex items-center justify-center w-full h-full gap-2 px-4 py-4 text-white transition-all bg-green-600 rounded hover:bg-green-700"
+          >
+            <i class="fa-solid fa-download"></i>
+            <span class="font-medium font-karma">Surat Keterangan Usaha</span>
+          </button>
+        </a>
+        <a
+          href="/assets/pdf/SURAT PENGANTAR KETERANGAN CATATAN KEPOLISIAN.pdf"
+          download
+          class="w-[350px] h-[60px]"
+        >
+          <button
+            class="flex items-center justify-center w-full h-full gap-2 px-4 py-4 text-white transition-all bg-green-600 rounded hover:bg-green-700"
+          >
+            <i class="fa-solid fa-download"></i>
+            <span class="font-medium font-karma"
+              >Surat Pengantar Keterangan Catatan Kepolisian</span
+            >
+          </button>
+        </a>
+        <a
+          href="/assets/pdf/SURAT PENGANTAR PERKAWINAN MODEL N1.pdf"
+          download
+          class="w-[350px] h-[60px]"
+        >
+          <button
+            class="flex items-center justify-center w-full h-full gap-2 px-4 py-4 text-white transition-all bg-green-600 rounded hover:bg-green-700"
+          >
+            <i class="fa-solid fa-download"></i>
+            <span class="font-medium font-karma"
+              >Surat Pengantar Perkawinan</span
+            >
+          </button>
+        </a>
+        <a
+          href="/assets/pdf/SURAT PERNYATAAN MISKIN.pdf"
+          download
+          class="w-[350px] h-[60px]"
+        >
+          <button
+            class="flex items-center justify-center w-full h-full gap-2 px-4 py-4 text-white transition-all bg-green-600 rounded hover:bg-green-700"
+          >
+            <i class="fa-solid fa-download"></i>
+            <span class="font-medium font-karma">Surat Pernyataan Miskin</span>
+          </button>
+        </a>
+        <a
+          href="/assets/pdf/SURAT PERSETUJUAN CALON PENGANTIN MODEL N4.pdf"
+          download
+          class="w-[350px] h-[60px]"
+        >
+          <button
+            class="flex items-center justify-center w-full h-full gap-2 px-4 py-4 text-white transition-all bg-green-600 rounded hover:bg-green-700"
+          >
+            <i class="fa-solid fa-download"></i>
+            <span class="font-medium font-karma"
+              >Surat Persetujuan Calon Pengantinc</span
+            >
+          </button>
+        </a>
+        <a
+          href="/assets/pdf/SURAT KETERANGAN KELAHIRAN .pdf"
+          download
+          class="w-[350px] h-[60px]"
+        >
+          <button
+            class="flex items-center justify-center w-full h-full gap-2 px-4 py-4 text-white transition-all bg-green-600 rounded hover:bg-green-700"
+          >
+            <i class="fa-solid fa-download"></i>
+            <span class="font-medium font-karma"
+              >Surat Keterangan Kelahiran</span
+            >
+          </button>
+        </a>
+        <a
+          href="/assets/pdf/SURAT KETERANGAN KEMATIAN.pdf"
+          download
+          class="w-[350px] h-[60px]"
+        >
+          <button
+            class="flex items-center justify-center w-full h-full gap-2 px-4 py-4 text-white transition-all bg-green-600 rounded hover:bg-green-700"
+          >
+            <i class="fa-solid fa-download"></i>
+            <span class="font-medium font-karma"
+              >Surat Keterangan Kematian</span
+            >
+          </button>
+        </a>
+      </div>
+    </section>
+    <footer class="py-4 text-white bg-green-950">
+      <div class="flex justify-center w-full">
+        <span class="text-sm font-roboto"
+          >© 2024 KKN kelompok 03 UTM | All Right Reserved</span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
